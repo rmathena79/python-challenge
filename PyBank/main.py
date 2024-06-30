@@ -63,11 +63,11 @@ def main():
 
                 # Update biggest increase/decrease running stats
                 if delta > max_delta_amount:
-                    logger.debug("New max: %r", row)
+                    logger.debug(f"New max: {row}")
                     max_delta_month = month
                     max_delta_amount = delta
                 elif delta < min_delta_amount:
-                    logger.debug("New min: %r", row)
+                    logger.debug(f"New min: {row}")
                     min_delta_month = month
                     min_delta_amount = delta
 
